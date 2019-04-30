@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.head{
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+header .navbar-left span {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.body{
+    margin-top: 50px;
+}
+.label{
+	margin: 0px 0px 5px;
+}
+.midasi{
+	margin: 20px 0px 10px;
+}
+.title{
+	color: #FFFFFF;
+	padding: 10px 0px 0px;
+}
+.glyphicon glyphicon-home home{
+	padding: 15px;
+	font-size: 13px;
+}
+.glyphicon glyphicon-edit sign_up{
+	padding: 15px;
+	font-size: 13px;
+}
+.glyphicon glyphicon-log-in sign_in{
+	padding: 15px;
+	font-size: 13px;
+}
+.glyphicon glyphicon-link about{
+	padding: 15px;
+	font-size: 13px;
+}
+.container{
+	margin: 0px 37px;
+	padding: 0px 15px;
+	line-height: 20px;
+}
+.nav navbar-nav navbar-right{
+	padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+.navbar navbar-fixed-top navbar-invers{
+	margin: 0px 135px;
+}
