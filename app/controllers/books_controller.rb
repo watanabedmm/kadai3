@@ -32,7 +32,7 @@ class BooksController < ApplicationController
 
   def edit
     @book = Book.find(params[:id])
-    if current_user != @book.user_id
+    if current_user.id != @book.user_id
        @books = Book.all
        render :index
     end
