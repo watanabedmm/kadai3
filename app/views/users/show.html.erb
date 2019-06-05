@@ -18,7 +18,7 @@
 	<tbody>
     <% @books.each do |book| %>
 		<tr>
-			<td><%= attachment_image_tag @user, :image, format: 'jpeg', fallback: "no_image.jpg", size: "100x100" %></td>
+			<td><%= attachment_image_tag book.user, :image,size: "100x100" %></td>
 			<td><%= link_to book.title , book_path(book.id) , class: "edit_book_#{@book}" %></td>
 			<td><%= book.opinion %></td>
 		</tr>
