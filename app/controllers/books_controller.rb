@@ -1,5 +1,7 @@
 class BooksController < ApplicationController
-	  def top
+	  before_action :authenticate_user!, except: [:top]
+
+    def top
   end
   def show
     @bookn = Book.new
