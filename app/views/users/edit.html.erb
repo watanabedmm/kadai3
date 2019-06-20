@@ -3,6 +3,7 @@
 <% if @user.errors.any? %>
   <div id="error_explanation" class="alert alert-danger">
     <ul>
+　　　　<h2><% @user.errors.count %>error</h2>
       <% @user.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
@@ -22,7 +23,7 @@
 
 <div>
     <%= f.label :introduction %>
-    <%= f.text_area :introduction %>
+    <%= f.text_area :introduction , class: "introduction" %>
 </div>
     <%= f.submit 'Update User' %>
 <% end %>
