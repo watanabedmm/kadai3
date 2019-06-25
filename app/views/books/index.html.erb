@@ -3,7 +3,9 @@
 	<div class="row">
 
 <%= flash[:success] %>
-
+ <% flash.each do |key, value| %>
+    <%= content_tag(:div, value, class: "#{key}") %>
+  <% end %>
 
 
 <%= render 'books/list', user: current_user , book: @book %>
